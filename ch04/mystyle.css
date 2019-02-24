@@ -1,0 +1,22 @@
+atom-text-editor,
+h3 {
+  text-align: right;
+}
+
+span {
+  text-decoration: line-through;
+}
+
+strong {
+  text-decoration: overline;
+}
+
+.p1 {
+  text-indent: 3em;
+  text-align: justify;
+}
+
+.p2 {
+  text-indent: lem;
+  text-align: center;
+}
