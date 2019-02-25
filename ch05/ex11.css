@@ -1,0 +1,23 @@
+input[type=text] {
+  color: red;
+}
+
+input:hover, textarea:hover{
+  background: aliceblue;
+}
+
+input[type=text]:focus, input[type=email]:focus {
+  font-size: 120%
+}
+
+label {
+  display: block;
+  padding: 5px;
+}
+
+label span {
+  display: inline-block;
+  padding: 10px;
+  text-align: right;
+  width: 90px;
+}

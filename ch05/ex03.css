@@ -1,0 +1,14 @@
+
+div{
+  display: inline-block;
+  position: absolute;
+  border: 1px solid lightgray;
+}
+
+div > p {
+  display: inline-block;
+  position: absolute;
+  height: 20px;
+  width: 15px;
+  background: lightgray;
+}

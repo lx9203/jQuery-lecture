@@ -1,0 +1,10 @@
+@keyframes bomb {
+  from { font-size: 1000%}
+  to { font-size: 100%}
+}
+
+h3 {
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite;
+  animation-name: bomb;
+}

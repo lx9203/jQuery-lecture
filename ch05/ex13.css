@@ -1,0 +1,7 @@
+span {
+  transition: font-size 5s;
+}
+
+span:hover {
+  font-size: 500%;
+}

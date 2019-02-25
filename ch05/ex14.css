@@ -1,0 +1,21 @@
+div {
+  display: inline-block;
+  padding: 5px;
+  color: white;
+  background: olivedrab;
+}
+
+/*변환*/
+div#rotate { transform: rotate(20deg);}
+div#skew { transform: skew(0deg,-20deg);}
+div#tranlate { transform: translateY(100px);}
+div#scale { transform: scale(3,1);}
+
+/* 마우스 올릴 때 추가변환*/
+div#rotate:hover { transform: rotate(80deg);}
+div#skew:hover { transform: skew(0deg,-60deg);}
+div#tranlate:hover { transform: translate(50px,100px);}
+div#scale:hover { transform: scale(4,2);}
+
+/*마우스 누를 때 추가 변환*/
+div#scale:active { transform: scale(1,5);}

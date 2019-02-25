@@ -1,0 +1,30 @@
+table{
+  border: 1px solid skyblue;
+  border-collapse: collapse;
+}
+
+td, th {
+  height: 15px;
+  padding: 5px;
+  text-align: center;
+  width : 100px;
+  border-bottom: 1px solid skyblue;
+}
+
+thead, tfoot {
+  background: darkgray;
+  color: yellow;
+  border: 1px solid skyblue;
+}
+
+tbody tr:nth-child(even) {
+  background: aliceblue;
+}
+
+tbody tr:hover {
+  background: pink;
+}
+
+tbody tr td:hover {
+  background: hotpink;
+}
