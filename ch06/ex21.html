@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <h3>3으로 나눈 나머지가 1인 수만 더하기</h3>
+  <hr>
+  <script type="text/javascript">
+    var n=prompt("정수를 입력하세요", 0);
+    n=parseInt(n)
+    var sum=0;
+      for(var i=1; i<=n; i++){
+        if(i%3 !=1)
+        continue;
+        document.write(i+" ");
+        sum += i;
+      }
+      document.write("<br>"+"<br>");
+      document.write("합은 " +sum);
+  </script>
+</body>
+</html>

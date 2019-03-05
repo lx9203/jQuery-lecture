@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <script type="text/javascript">
+    function adder(a, b) {
+      var sum;
+      sum = a + b;
+      return sum;
+    }
+  </script>
+</head>
+<body>
+  <h3>adder함수</h3>
+  <hr>
+  <script type="text/javascript">
+    var a=prompt("정수a를 입력하세요.")
+    a=parseInt(a);
+    var b=prompt("정수b를 입력하세요.")
+    b=parseInt(b);
+    var n = adder(a, b);
+    document.write(a+" + "+b+ "는 " + n + "<br>");
+  </script>
+
+</body>
+</html>

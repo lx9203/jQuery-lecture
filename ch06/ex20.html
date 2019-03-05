@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <h3>1부터 얼마까지 더해야 n값이 나올까?</h3>
+  <hr>
+
+  <script type="text/javascript">
+    var n=prompt("0에서부터 몇을 더해야 n을 넘게될까? ","0보다 큰 정수 n을 입력하세요");
+    sum=0; i=0;
+
+    while (true) {
+      sum+=i;
+      if(sum >n)
+      break;
+      i++;
+    }
+    document.write(i+ "까지 더하면 "+ sum+"이(가) 된다"+"<br>");
+  </script>
+</body>
+</html>
