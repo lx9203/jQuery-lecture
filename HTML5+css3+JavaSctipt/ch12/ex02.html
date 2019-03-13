@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <screipt>
+
+  </screipt>
+</head>
+<body>
+  <h3>세션 스토리지에 구입 리스트 저장/검색</h3>
+  <hr>
+  품목명 : <input id="item" type="text"><br>
+  개수 : <input type="text" id="count"><br>
+  <button id="save" onclick="store()">저장</button>
+  <button id="retrieve" onclick="retrieve()">검색</button><br>
+  <button id="key" onclick="key()">전체검색</button><br>
+  <script>
+    var item = document.getElementById('item');
+    var count = document.getElementById('count');
+
+    function store() {
+      if(!window.sessionStorage){
+        alert("세션 스토리지를 지원하지 않습니다.");
+        return;
+      }
+      sessionStorage.setItem(item.value, count.value);
+    }
+
+    function retrieve() {
+      if(!window.sessionStorage){
+        alert("세션 스토리지를 지원하지 않습니다.");
+        return;
+      }
+      var val = sessionStorage.getItem(item.value);
+      if(val == null)
+        alert(item.value + " 는 구립 리스트에 없습니다.");
+      else
+        count.value = val;
+    }
+
+    function key(){
+      var text = "구입 품목은\n\n" +"";
+      for(i=0;i<sessionStorage.length; i++){
+        var key = sessionStorage.key(i);
+        var val = sessionStorage.getItem(key);
+        text +=  key + " " + val + "개\n";
+      }
+      alert(text)
+    }
+  </script>
+</body>
+</html>

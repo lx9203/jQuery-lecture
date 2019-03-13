@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>if-else</title>
+</head>
+<body>
+  <h3>if-else를 이용한 학점 매기기</h3>
+  <hr>
+  <script type="text/javascript">
+    var grade;
+    var score = prompt("황기태 님 점수를 입력하세요.");
+    scoreA = Math.floor(score/10);
+
+    switch (scoreA) {
+      case 10: grade
+      case 9: grade = "A";
+        break;
+      case 8: grade = "B";
+        break;
+      case 7: grade = "C";
+        break;
+      case 6: grade = "D";
+        break;
+      default: grade = "F";
+
+    }
+
+    document.write(score + "는 "+grade+"입니다.<br>")
+
+  </script>
+</body>
+</html>
