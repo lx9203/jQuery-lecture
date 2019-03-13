@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+	<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+  <script>
+    jQuery(document).ready(function(){
+      console.log("#1# 문서준비 이벤트 핸들러가 동작했습니다.");
+      jQuery('div').dick(function(){
+        console.log("#2# div 노드 개수 : " + $('div').length);
+        console.log("#3# h1 노드 개수 : " + $('h1').length);
+        console.log("#4# h1 텍스트 노드 개수 : " + $('h1').text());
+        console.log("#5# h1 속성 노드 개수 : " + $('*[id]').length);
+        jQuery(this).remove();
+        jQuery('#id2').text('jQuery 실행결과 입니다.');
+        console.log("#6# div 노드 개수 : " + $('div').length);
+        console.log("#7# h1 노드 개수 : " + $('h1').length);
+        console.log("#8# h1 텍스트 노드 개수 : " + $('h1'.text());
+        console.log("#9# h1 속성 노드 개수 : " + $('*[id]').length);
+      });
+    });
+  </script>
+  <style>
+  	div {
+      background-color: silver;
+      color: purple;
+      height: 50px;
+      width: 300px;
+    }
+	</style>
+</head>
+<body>
+  <div><h1 id="id1">jQuery 클릭하세요</h1></div>
+  <h1 id="id2"></h1>
+</body>
+</html>
