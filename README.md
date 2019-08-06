@@ -1,4 +1,4 @@
-# lecture
+# jQuery - lecture
   
 2019-02-21 목요일 Chapter 01 추가  
 2019-02-21 목요일 Chapter 02 추가  
